@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #FAFAF9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 2em;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 4em 1.5em;
+    
+}
+
+.star span {
+    background-color: #F5C044;
+    padding: .5em;
+    border-radius: 50%;
+}
+
+.one h1 {
+    font-size: 2.25rem;
+}
+.one p{
+    font-size:  1.25rem;
+    line-height: 1.5;
+    color: #52525A;
+}
+ul{
+    list-style: none;
+    display: inline;
+    font-size:  0.875rem;
+}
+li{
+    display: flex;
+    align-items: center;
+    padding: .5em 0;
+    color: #52525A;
+}
+li img{
+    margin-right: .5em;
+}
+.one{
+    margin-bottom: 3em;
+    width: 100%;
+}
+.two{
+    width: 100%;
+}
+
+.google, .meta{
+    margin: 1em 0;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 15px;
+    padding: 1em 2em;
+    background-color: white;
+    display: inline-block;
+}
+.images{
+    display: flex;
+    align-items: center;
+}
+
+.comp{
+    max-width: 80px;
+    display: inline;
+    margin-right: 1em;
+}
+.stars img{
+    width: 20px;
+    display: inline;
+}
+
+.two .name{
+    font-weight: 700;
+    display: block;
+    margin: .8em 0;
+}
+.two p{
+    font-size: .875rem;
+    color: #52525A;
+    line-height: 1.5;
+}
+
+.google{
+    float:right
+}
+.meta{
+    clear: both;
+    float: left;
+}
+
+
+@media (min-width:648px){
+    .container{
+        min-width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .one, .two{
+        width: 50%;
+    }
+}
